@@ -1,38 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>44 paskaita - Git ir GitHub</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>44 paskaita - Git ir Github</title>
+  <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-    <header></header>
-    <main>
-        <section>
-            <h2>Git ir GitHub</h2>
-            <p>
-                Git'as - kodo versijavimo programa;
-                GitHub - versijuoto kodo talpykla
-            </p>
-        </section>
-        <section>
-            <h2>Git komandos</h2>
-            <ul>
-                <li>init - sukurti repozitoriją</li>
-                <li>status - pateikia git repozitorijos dabartinę informaciją</li>
-                <li>add - prideda nurodytus failus prie commitinimui paruoštų failų</li>
-                <li>rm --cached || restore --staged - išima nurodytus failus iš stage zonos</li>
-                <li>commit -m "Žinutė apie commit'ą" - sukuria kodo versiją iš stage failų ir prideda žinutę apie pakitimus</li>
-                <li>restore - sugrąžina nurodytą/us failą/us į pradinę būseną (jeigu tie failai nebuvo add'imti į stage'ingo zoną)</li>
-                <li>pull</li>
-                <li>push</li>
-                <li>log</li>
-                <li>clone</li>
-                <li>branch</li>
-            </ul>
-        </section>
-    </main>
-    
+  <header></header>
+  <main>
+    <section> <!-- Git ir Github -->
+      <h1>Git ir Github</h1>
+      <p>
+        Git'as - kodo versijavimo programa.<br>
+        GitHub'as - versijuoto kodo talpykla internete.
+      </p>
+    </section>
+    <section>
+      <h2>Git komandos</h2>
+      <ul>
+        <li>init - sukurti git repozitoriją dabartiniame aplankale</li>
+        <li>status - pateikia git repozitorijos dabartinę informaciją</li>
+        <li>add - prideda nurodytus failus prie commit'inmui paruoštų failų (stage'ina)</li>
+        <li>rm --cached || restore --staged - išima nurodytus failus ir stage'inimo zonos (unstage'ina)</li>
+        <li>commit -m "žinutė apie commit'ą" - sukuria kodo versiją iš stage'intų failų ir prideda žinutę apie pakitimus (žinutė turėtų būti trumpa ir aiški)</li>
+        <li>restore - sugrąžina nurodytą/us failą/us į pradinę būseną (jeigu tie failai nebuvo add'inti į stage'ingo zoną)</li>
+        <li>push - nusiunčia lokalios repozitorijos commit'us į išorinę repozitoriją</li>
+        <li>pull - atsiunčia išorinės repozitorijos commit'us į lokalią repozitoriją</li>
+        <li>log - išveda commit'ų sąrašą</li>
+        <li>clone - nuklonuoja nurodytą projektą į dabartinį aplankalą</li>
+        <li>checkout commitID|branchName - pereinama į nurodytą kodo versiją arba kitą šaką</li>
+        <li>branch naujosSakosPavadinimas - sukuriama nauja šaka</li>
+        <li>...</li>
+      </ul>
+    </section>
+    <section> <!-- Branch protection rules -->
+      <h2>Branch protection rules</h2>
+      <p>
+        Vienas svarbiausių šakų apsaugos taisyklių yra "Pull Request" (bandymas vienos šakos commit'us sukelti į kitą šaką (merge)).<br>
+        Pull Request taisklės viduje dar reikėtų suteikti "Require approvals" nustatymą, kuris reikalauja, kad nurodytas kiekis kitų projekto dalyvių patvirtintų tą Pull Request'ą, norint, kad šakos būtų apjungtos. 
+      </p>
+    </section>
+    <section> <!-- Eiliškumas Pull Request -->
+      <h2>Eiliškumas Pull Request</h2>
+      <p>02.13</p>
+    </section>
+    <section> <!-- Papildoma info -->
+      <h2>Papildoma info</h2>
+      <ul>
+        <li><a href="https://youtu.be/mJ-qvsxPHpY" target="_blank">Nick White</a></li>
+        <li><a href="https://education.github.com/git-cheat-sheet-education.pdf" target="_blank">git-cheat-sheet</a></li>
+        <li><a href="https://rogerdudler.github.io/git-guide/" target="_blank">simple git guide</a></li>
+        <li><a href="https://youtu.be/8JJ101D3knE" target="_blank">Mosh</a></li>
+        <li><a href="https://youtu.be/DVRQoVRzMIY" target="_blank">Tech with Tim</a></li>
+        <li><a href="https://youtu.be/hwP7WQkmECE" target="_blank">FireShip 100s</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer></footer>
 </body>
 </html>
